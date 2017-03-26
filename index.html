@@ -8,14 +8,17 @@
        <h1>My Shopping List</h1>
        <div ng-app="myShoppingList" ng-controller="myCtrl">
            <ul>
-               <li ngRepeat="x in products">{{x}}</li>
-               <span ng-click="removeItem($index)">&times</span>
+               <li ngRepeat="x in products">{{x}}
+               <span ng-click="removeItem($index)">&times;</span>
+               </li>
            </ul>
            <input ngModel="addMe">
            <button ng-click="addItem()">Add</button>
+           <p>{{errortext}}</p>
        </div>
        
        <script src="angular.min(1).js"></script><!--Angular library-->
        <script src="MainController.js"></script>
+       <link rel="stylesheet" http="https://www.w3schools.com/w3css/3/w3.css">
     </body>
 </html>
