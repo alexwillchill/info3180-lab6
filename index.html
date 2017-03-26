@@ -9,7 +9,7 @@
        <div ng-app="myShoppingList" ng-controller="myCtrl">
            <ul>
                <li ngRepeat="x in products">{{x}}</li>
-               <span ng-click="removeItem($index)">&times;</span>
+               <span ng-click="removeItem($index)">&times</span>
            </ul>
            <input ngModel="addMe">
            <button ng-click="addItem()">Add</button>
