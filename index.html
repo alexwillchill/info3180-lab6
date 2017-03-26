@@ -8,7 +8,9 @@
        <h1>My Shopping List</h1>
        <div ng-app="myShoppingList" ng-controller="myCtrl">
            <ul>
-               <li ng-repeat="x in products">{{ x }}</li>
+               <li ngRepeat="x in products">{{ x }}</li>
+               <input ngModel="addMe">
+               <button ng-click="addItem()">Add</button>
            </ul>
        </div>
        
